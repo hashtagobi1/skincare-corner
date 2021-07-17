@@ -1,13 +1,29 @@
+import { Grid, withStyles, WithStyles } from '@material-ui/core'
+import { makeStyles, createStyles, Theme } from '@material-ui/core/styles';
 import './App.scss';
-// import Link from 'react-router'
+import appStyles from './appStyles'
+import  NavBar from './components/NavBar'
 
-function App() {
+const useStyles = makeStyles({
+  root: {
+    // backgroundColor: 'pink'
+  },
+});
+
+function App(props) {
+  const classes = useStyles();
+
   return (
-    <div className="App">
-      Main App
+    <Grid
+      container
+      className={classes.root}>
+      <Grid item xs={12}>
 
-    </div>
+        <NavBar />
+      </Grid>
+
+    </Grid>
   );
 }
 
-export default App;
+export default (withStyles()(App));
