@@ -7,20 +7,21 @@ const theme = createTheme()
 
 export const useStyles = makeStyles({
     root: {
+        
     },
     text: {
         fontSize: 28,
         fontWeight: 'bold',
         textTransform: 'uppercase',
-        color: '#1C1C1C'
+        color: '#1C1C1C',
+        fontFamily:'Raleway'
+
     },
     navigation: {
-        // backgroundColor: 'red',
         display: 'flex',
         justifyContent: 'space-evenly',
         alignItems: 'center',
         paddingTop: theme.spacing(10),
-        // paddingTop: '80px',
 
     },
     image: {
@@ -35,8 +36,8 @@ export const useStyles = makeStyles({
 
 });
 
-const NavBar = () => {
-    const classes = useStyles()
+const NavBar = (props) => {
+    const classes = useStyles(props)
     return (
         <Grid
             className={classes.root}
@@ -49,7 +50,6 @@ const NavBar = () => {
                 <Grid item xs={6} />
 
                 <Grid item xs={6} 
-                spacing-xs-12
                 className={classes.centering}>
                     <Typography
                         className={classes.text}>
