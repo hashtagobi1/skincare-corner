@@ -1,9 +1,11 @@
 import './style.scss'
+import Icon from './arrow.svg'
+
 
 const Arrow = () => {
     return(
         <>
-        <i class="fas fa-arrow-circle-right"></i>
+        <img src={Icon}/>
         </>
     )
 }

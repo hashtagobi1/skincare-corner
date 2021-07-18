@@ -2,7 +2,7 @@ main{
     height: 100vh;
     display: flex;
     flex-direction: column;
-    padding-top: 30px;
+    padding-top: 80px;
     padding-left: 10%;
     padding-right: 9%;
 }
@@ -24,7 +24,7 @@ main{
     }
 
     .makeStyles-navigation-3{
-        padding-top: 0;
+        padding: 0;
     }
 
 }
@@ -35,5 +35,34 @@ main{
     flex-direction: column;
     align-items: center;
     flex: 1;
-    padding-top: 100px;
+    padding-top: 200px;
+}
+
+.user-info{
+    position: absolute;
+}
+
+.progress-bar-container{
+    width: 70%;
+    height: 14px;
+    background-color: #5d5455;
+    border-radius: 500px;
+
+    .progress-bar{
+        width: 80%;
+        height: 100%;
+        background-color: #4bba38;
+        border-radius: 500px;
+        
+    }
+}
+
+.arrow{
+    color:#191919;
+    font-size: 2em;
+    transform: rotate(270deg);
+}
+
+ul{
+    list-style-type: none;
 }
