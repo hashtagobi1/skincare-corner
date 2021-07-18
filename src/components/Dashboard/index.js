@@ -45,7 +45,7 @@ const Dashboard = () => {
       <img src={DownArrow} onClick={listToggle} style={{transform: listShown ? 'rotate(180deg)' : 'rotate(0deg)'}}/>
         <ul className="upcoming-benefits" style={{display: listShown ? 'block' : 'none'}}>
           <li>Free Delivery</li>
-          <li>1 free sample monthly</li>
+          <li>1 free sample every month</li>
           <li>10% off orders over £25</li>
         </ul>
 
