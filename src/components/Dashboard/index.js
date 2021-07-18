@@ -42,7 +42,7 @@ const Dashboard = () => {
         <h2>20 days until next reward</h2>
 
       <h2>Upcoming Benefits</h2>
-      <img src={DownArrow} onClick={listToggle} style={{transform: listShown ? 'rotate(0deg)' : 'rotate(180deg)'}}/>
+      <img src={DownArrow} onClick={listToggle} style={{transform: listShown ? 'rotate(180deg)' : 'rotate(0deg)'}}/>
         <ul className="upcoming-benefits" style={{display: listShown ? 'block' : 'none'}}>
           <li>Free Delivery</li>
           <li>1 free sample monthly</li>
