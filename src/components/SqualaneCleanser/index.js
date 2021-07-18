@@ -1,3 +1,4 @@
+import { Switch, Route, BrowserRouter ,Link} from "react-router-dom";
 import { Grid, Typography, withStyles, Button, WithStyles, Paper, Popover, Modal } from '@material-ui/core'
 import { makeStyles, createTheme } from '@material-ui/core/styles';
 import NavBar from "../NavBar";
@@ -12,7 +13,6 @@ import Instagram from '../../obipics/InstagramLogo.png'
 import Email from '../../obipics/Envelope.png'
 import Facebook from '../../obipics/MessengerLogo.png'
 import Twitter from '../../obipics/TwitterLogo.png'
-import { Link as SwitchLink } from "react-router-dom";
 
 
 const theme = createTheme()
