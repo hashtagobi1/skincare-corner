@@ -2,6 +2,7 @@ import { Grid, Typography, withStyles, WithStyles } from '@material-ui/core'
 import { makeStyles, createStyles, createTheme } from '@material-ui/core/styles';
 import Logo from '../../obipics/deciem_logo.png'
 import SVGLOGO from '../../obipics/deciemSVG.svg'
+import {Link} from 'react-router-dom'
 
 const theme = createTheme()
 
@@ -51,15 +52,15 @@ const NavBar = (props) => {
 
                 <Grid item xs={6} 
                 className={classes.centering}>
-                    <Typography
+                    <Link to='/'><Typography
                         className={classes.text}>
                         dashboard
-                    </Typography>
+                    </Typography></Link>
                     <Grid item xs={1}/>
-                    <Typography
+                    <Link to='/routine'><Typography
                         className={classes.text}>
                         routine
-                    </Typography>
+                    </Typography></Link>
 
 
                 </Grid>

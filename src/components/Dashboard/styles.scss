@@ -1,0 +1,33 @@
+main{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    padding-top: 30px;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.dashboard-header{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    h1{
+        font-size: 1.2em;
+        margin-bottom: 16px;
+        font-weight:800;
+    }
+
+    h2{
+        font-size: 1.2em;
+    }
+}
+
+.progress-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+    padding-top: 100px;
+}
