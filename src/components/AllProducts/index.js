@@ -1,11 +1,13 @@
 import { Grid, Typography, withStyles, WithStyles } from '@material-ui/core'
 import { makeStyles, createTheme } from '@material-ui/core/styles';
+import { Switch, Route, BrowserRouter, Link } from "react-router-dom";
+
 import first from '../../obipics/product_pics/1st.png'
 import second from '../../obipics/product_pics/2nd.png'
 import third from '../../obipics/product_pics/3rd.png'
 import fourth from '../../obipics/product_pics/4th.png'
 import { motion } from "framer-motion"
-
+import IndividualProduct from '../SqualaneCleanser'
 const theme = createTheme()
 
 export const useStyles = makeStyles({
@@ -43,7 +45,8 @@ const Product = (props) => {
 
     return (
         <Grid container
-            className={classes.root}>
+            className={classes.root}
+        >
 
 
 
@@ -51,7 +54,8 @@ const Product = (props) => {
                 item
                 className={classes.titleContainer}
                 xs={12}
-                md={12}>
+                md={12}
+            >
 
                 <motion.div
                     drag
@@ -63,6 +67,7 @@ const Product = (props) => {
 
 
                     }}
+
 
                 >
 
@@ -83,18 +88,23 @@ const Product = (props) => {
                 className={classes.product}
                 item
                 xs={12}
-                md={3}>
-                <motion.div
-                    whileHover={{
-                        scale: 2.5,
-                    }}
+                md={3}
+            // onClick={() => alert('Ouch!')}
 
+            >
+                <Link to="Squalane-Cleanser">
+                    <motion.div
+                        whileHover={{
+                            scale: 2.5,
+                        }}
+                    >
+                        {/* <IndividualProduct
+                            name="Squalane-Cleanser"/> */}
 
+                        <img src={first} alt="Squalane Cleanser" />
+                    </motion.div>
+                </Link>
 
-                >
-
-                    <img src={first} alt="Squalane Cleanser" />
-                </motion.div>
 
             </Grid>
 
@@ -105,13 +115,19 @@ const Product = (props) => {
                 xs={12}
                 md={3}>
 
-                <motion.div
-                    whileHover={{
-                        scale: 2.5,
-                    }}>
 
-                    <img src={second} alt="Hyaluronic Acid 2% + B5" />
-                </motion.div>
+                <Link to="Buffet">
+                    <motion.div
+                        whileHover={{
+                            scale: 2.5,
+                        }}
+                    >
+                        <img src={second} alt="Hyaluronic Acid 2% + B5" />
+
+
+
+                    </motion.div>
+                </Link>
 
 
             </Grid>
@@ -120,16 +136,17 @@ const Product = (props) => {
                 item
                 xs={12}
                 md={3}>
-                <motion.div
-                    whileHover={{
-                        scale: 2.5,
-                    }}
-
-                >
 
 
-                    <img src={third} alt="Natural Moisturizing Factors + HA" />
-                </motion.div>
+                <Link to="Moisturizing">
+                    <motion.div
+                        whileHover={{
+                            scale: 2.5,
+                        }}
+                    >
+                        <img src={third} alt="Natural Moisturizing Factors + HA" />
+                    </motion.div>
+                </Link>
 
             </Grid>
 
@@ -138,19 +155,23 @@ const Product = (props) => {
                 item
                 xs={12}
                 md={3}>
-                <motion.div
-                    whileHover={{
-                        scale: 2.5,
-                    }}
-                >
+  
 
-                    <img src={fourth} alt="“Buffet” + Copper Peptides 1%" />
-                </motion.div>
+<Link to="Hya">
+                    <motion.div
+                        whileHover={{
+                            scale: 2.5,
+                        }}
+                    >
+                                          <img src={fourth} alt="Hyaluronic Acid 2% + B5" />
+
+                    </motion.div>
+                </Link>
 
             </Grid>
 
 
-        </Grid>
+        </Grid >
     )
 }
 
