@@ -277,7 +277,7 @@ const SqualaneCleanser = ({ title }) => {
                             variant="contained"
                             className={classes.button}
 
-                            href="/Log"
+                            href="/Logging"
 
 
                             >

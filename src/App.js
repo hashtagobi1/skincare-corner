@@ -5,7 +5,7 @@ import SqualaneCleanser from "./components/SqualaneCleanser";
 import Buffet from "./components/Buffet";
 import Moisturizing from "./components/Moisturizing";
 import Hya from "./components/Hya";
-import Log from "./components/Log";
+import Logging from "./components/Logging"
 /*import "./App.scss";*/
 
 const App = () => {
@@ -19,7 +19,7 @@ const App = () => {
           <Route exact path="/Buffet" component={Buffet} />
           <Route exact path="/Moisturizing" component={Moisturizing} />
           <Route exact path="/Hya" component={Hya} />
-          <Route exact path="/Log" component={Log} />
+          <Route exact path="/Logging" component={Logging} />
         </Switch>
       </BrowserRouter>
     </div>
