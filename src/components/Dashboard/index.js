@@ -1,18 +1,24 @@
 import React from "react";
 import "./styles.scss";
+import {Link} from 'react-router-dom'
+import NavBar from "../NavBar";
 import ProfilePic from "../ProfilePic/index";
 import Arrow from "../Arrow/index";
-import {Link} from 'react-router-dom'
+
 
 const Dashboard = () => {
   return (
     <main>
       <header className="dashboard-header">
+        <div className='user-info'>
         <ProfilePic />
         <h1>Good Morning Mary!</h1>
         <h2>
-          Current Level: <span>Skincare Enthusiast</span>
+          Current Level: <span>Skincare Enthusiast ⭐ ⭐ ⭐</span>
         </h2>
+        </div>
+
+        <NavBar/>
       </header>
 
       <div className="progress-container">
