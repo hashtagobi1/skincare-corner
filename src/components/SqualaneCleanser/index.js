@@ -1,5 +1,4 @@
-import { Switch, Route, BrowserRouter } from "react-router-dom";
-import { Grid, Typography, withStyles, Button, WithStyles, Link, Paper, Popover, Modal } from '@material-ui/core'
+import { Grid, Typography, withStyles, Button, WithStyles, Paper, Popover, Modal } from '@material-ui/core'
 import { makeStyles, createTheme } from '@material-ui/core/styles';
 import NavBar from "../NavBar";
 import first from '../../obipics/product_pics/1st.png'
@@ -122,7 +121,7 @@ export const useStyles = makeStyles({
     },
     button: {
         backgroundColor: '#1C1C1C',
-        marginRight:"44px"
+        marginRight: "44px"
     },
     paper: {
         position: 'absolute',
@@ -273,20 +272,20 @@ const SqualaneCleanser = ({ title }) => {
                     <Grid item xs={6}
                         className={classes.rightBottom}>
 
-<Link to="/Logging">
+                        <Link to="/Logging">
 
-<Button
+                            <Button
 
-    variant="contained"
-    className={classes.button}
+                                variant="contained"
+                                className={classes.button}
 
->
+                            >
 
-    <Typography
-        className={classes.buttonText}>Log Entry</Typography>
+                                <Typography
+                                    className={classes.buttonText}>Log Entry</Typography>
 
-</Button>
-</Link>
+                            </Button>
+                        </Link>
 
                         <Modal
                             open={openModal}
@@ -369,7 +368,7 @@ const SqualaneCleanser = ({ title }) => {
 
 
 
-                        <img src={Share} 
+                        <img src={Share}
                             onClick={handleOpen}
                             alt="share button" />
 
