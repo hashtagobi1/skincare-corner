@@ -277,7 +277,8 @@ const SqualaneCleanser = ({ title }) => {
                             variant="contained"
                             className={classes.button}
 
-                            href="/log"
+                            href="/Log"
+
 
                             >
                             <Typography

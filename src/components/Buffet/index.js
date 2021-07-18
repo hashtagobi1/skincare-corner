@@ -285,7 +285,7 @@ const HyaluronicAcid = ({ title }) => {
                         className={classes.rightBottom}>
 
                         <Button
-                            href="/log"
+                            href="/Log"
 
                             variant="contained"
                             className={classes.button}

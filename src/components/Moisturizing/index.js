@@ -286,7 +286,8 @@ const Moisturizing = ({ title }) => {
 
                         <Button
                             variant="contained"
-                            href="/log"
+                            href="/Log"
+
 
                             className={classes.button}>
                             <Typography

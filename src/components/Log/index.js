@@ -106,7 +106,7 @@ function getModalStyle() {
     };
 }
 
-const Logging = () => {
+const Log = () => {
     const classes = useStyles();
 
     const [openModal, setOpenModal] = useState(false)
@@ -195,4 +195,4 @@ const Logging = () => {
     )
 }
 
-export default Logging
+export default Log
