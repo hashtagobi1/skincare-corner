@@ -283,18 +283,21 @@ const HyaluronicAcid = ({ title }) => {
 
                     <Grid item xs={6}
                         className={classes.rightBottom}>
+                            
+                        <Link to="Log">
 
-                        <Button
-                            href="/Log"
+                            <Button
 
-                            variant="contained"
-                            className={classes.button}
+                                variant="contained"
+                                className={classes.button}
 
-                        >
-                            <Typography
-                                className={classes.buttonText}>Log Entry</Typography>
+                            >
 
-                        </Button>
+                                <Typography
+                                    className={classes.buttonText}>Log Entry</Typography>
+
+                            </Button>
+                        </Link>
 
                         <Modal
                             open={openModal}
