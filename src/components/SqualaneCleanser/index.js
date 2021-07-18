@@ -241,16 +241,6 @@ const SqualaneCleanser = ({ title }) => {
 
                             <img src={Calendar} alt="days" />
                         </Grid>
-
-
-
-
-
-
-
-
-
-
                     </Grid>
                 </Grid>
 
@@ -285,7 +275,11 @@ const SqualaneCleanser = ({ title }) => {
 
                         <Button
                             variant="contained"
-                            className={classes.button}>
+                            className={classes.button}
+
+                            href="/log"
+
+                            >
                             <Typography
                                 className={classes.buttonText}>Log Entry</Typography>
 

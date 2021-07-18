@@ -122,7 +122,7 @@ export const useStyles = makeStyles({
     },
     button: {
         backgroundColor: '#1C1C1C',
-        marginRight:"44px"
+        marginRight: "44px"
     },
     paper: {
         position: 'absolute',
@@ -213,7 +213,7 @@ const HyaluronicAcid = ({ title }) => {
                         className={classes.left}>
                         <img
                             className={classes.imageSize}
-                            src={second} 
+                            src={second}
                             alt="Hyaluronic Acid 2% + B5" />
 
 
@@ -285,8 +285,12 @@ const HyaluronicAcid = ({ title }) => {
                         className={classes.rightBottom}>
 
                         <Button
+                            href="/log"
+
                             variant="contained"
-                            className={classes.button}>
+                            className={classes.button}
+
+                        >
                             <Typography
                                 className={classes.buttonText}>Log Entry</Typography>
 
@@ -373,7 +377,7 @@ const HyaluronicAcid = ({ title }) => {
 
 
 
-                        <img src={Share} 
+                        <img src={Share}
                             onClick={handleOpen}
                             alt="share button" />
 
