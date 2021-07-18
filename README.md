@@ -27,10 +27,8 @@ We learned how to work effectively as a team and co-ordinate our skillsets for a
 We want to be able to find more businesses who would benefit from this service in order to increase their customer base. Alongside this, we hope to conduct more research on our initial problem statement.
 
 
-### Design Screens
-https://github.com/hashtagobi1/skincare-corner/blob/main/Calendar.png
+### some Design Screens
 
 ![image](https://github.com/hashtagobi1/skincare-corner/blob/main/Calendar.png)
-![image](https://github.com/hashtagobi1/skincare-corner/blob/main/Days.png)
 ![image](https://github.com/hashtagobi1/skincare-corner/blob/main/Log%20Entry.png)
 ![image](https://github.com/hashtagobi1/skincare-corner/blob/main/Welcome%20Back%20ACTIVE%20STATE.png)
