@@ -284,7 +284,7 @@ const HyaluronicAcid = ({ title }) => {
                     <Grid item xs={6}
                         className={classes.rightBottom}>
 
-                        <Link to="Logging">
+                        <Link to="/Logging">
 
                             <Button
 

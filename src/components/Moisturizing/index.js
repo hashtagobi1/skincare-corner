@@ -284,16 +284,20 @@ const Moisturizing = ({ title }) => {
                     <Grid item xs={6}
                         className={classes.rightBottom}>
 
-                        <Button
-                            variant="contained"
-                            href="/Log"
+                        <Link to="/Logging">
 
+                            <Button
 
-                            className={classes.button}>
-                            <Typography
-                                className={classes.buttonText}>Log Entry</Typography>
+                                variant="contained"
+                                className={classes.button}
 
-                        </Button>
+                            >
+
+                                <Typography
+                                    className={classes.buttonText}>Log Entry</Typography>
+
+                            </Button>
+                        </Link>
 
                         <Modal
                             open={openModal}

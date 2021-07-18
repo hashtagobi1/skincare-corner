@@ -273,18 +273,20 @@ const SqualaneCleanser = ({ title }) => {
                     <Grid item xs={6}
                         className={classes.rightBottom}>
 
-                        <Button
-                            variant="contained"
-                            className={classes.button}
+<Link to="/Logging">
 
-                            href="/Logging"
+<Button
 
+    variant="contained"
+    className={classes.button}
 
-                            >
-                            <Typography
-                                className={classes.buttonText}>Log Entry</Typography>
+>
 
-                        </Button>
+    <Typography
+        className={classes.buttonText}>Log Entry</Typography>
+
+</Button>
+</Link>
 
                         <Modal
                             open={openModal}
