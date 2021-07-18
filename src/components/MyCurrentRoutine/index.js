@@ -3,7 +3,7 @@ import { makeStyles, createTheme } from '@material-ui/core/styles';
 /*import './App.scss';*/
 /*import MyCurrentRoutineStyles from './MyCurrentRoutineStyles'*/
 import NavBar from '../../components/NavBar'
-import Product from '../../components/Product';
+import Product from '../AllProducts';
 
 
 
